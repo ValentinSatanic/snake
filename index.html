@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змейка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Змейка</h1>
+    
+    <div class="game-container">
+        <div class="score-container">
+            <div>Счет: <span id="score">0</span></div>
+            <div>Рекорд: <span id="high-score">0</span></div>
+        </div>
+        
+        <canvas id="game-board" width="400" height="400"></canvas>
+        
+        <div class="controls">
+            <button id="start-btn">Начать игру</button>
+            <button id="pause-btn">Пауза</button>
+            <button id="reset-btn">Сброс</button>
+        </div>
+    </div>
+    
+    <div class="instructions">
+        <h3>Управление:</h3>
+        <p>Стрелки на клавиатуре для управления змейкой</p>
+        <p>Цель: съесть как можно больше еды, не врезаясь в стены или себя</p>
+    </div>
+    
+    <div id="game-over" class="game-over">
+        <h2>Игра окончена!</h2>
+        <p>Ваш счет: <span id="final-score">0</span></p>
+        <button id="restart-btn">Играть снова</button>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/food.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
